@@ -4,56 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Publications</title>
+    
+    <!-- External CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/styles.css">
-    </head>
-    <body class="light-mode">
+</head>
+<body class="light-mode">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Andrew So</a>
+        <a class="navbar-brand" href="/">Andrew So</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/posts">Posts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/projects">Projects</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/posts">Posts</a></li>
+                <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
             </ul>
         </div>
     </nav>
-    
-    <h3>Publications</h3>
 
-    <ul>
-        <li>
-            <a href = "../media/publications/10399064.pdf"><strong>Multiview Robust Adversarial Stickers for Arbitrary Objects in the Physical World</strong><br></a>
-            S Oslund, C Washington, A So, T Chen, H Ji<br>
-            Journal of Computational and Cognitive Engineering 1 (4), 152-158, 22, 2022
-        </li>
-        <li>
-            <a href = "../media/publications/10226537.pdf"><strong>On multiview robustness of 3d adversarial attacks</strong><br></a>
-            P Yao, A So, T Chen, H Ji<br>
-            Practice and Experience in Advanced Research Computing, 372-378, 7, 2020
-        </li>
-        <li>
-            <a href = "../media/publications/10226536.pdf"><strong>Privacy preserving inference with convolutional neural network ensemble</strong><br></a>
-            A Xiong, M Nguyen, A So, T Chen<br>
-            2020 IEEE 39th International Performance Computing and Communications, 3, 2020
-        </li>
-        <li>
-            <a href = "../media/publications/70.pdf"><strong>Multiview-Robust 3D Adversarial Examples of Real-world Objects</strong><br></a>
-            P Yao, A So, T Chen, H Ji<br>
-            CVPR 2020 Workshop
-        </li>
-    </ul>
+    <!-- Publications List -->
+    <div class="container mt-4">
+        <h3>Publications</h3>
+        <ol>
+            <li>
+                <a href = "../media/publications/10399064.pdf"><strong>Multiview Robust Adversarial Stickers for Arbitrary Objects in the Physical World</strong><br></a>
+                S Oslund, C Washington, A So, T Chen, H Ji<br>
+                Journal of Computational and Cognitive Engineering 1 (4), 152-158, 22, 2022
+                <p>
+                <strong>Summary</strong>: Among different adversarial attacks on deep learning models for image classification, physical attacks have been considered easier to implement without assuming access to victims’ devices.
+                </p>
+            </li>
+            <li>
+                <a href = "../media/publications/10226537.pdf"><strong>On multiview robustness of 3d adversarial attacks</strong><br></a>
+                P Yao, A So, T Chen, H Ji<br>
+                Practice and Experience in Advanced Research Computing, 372-378, 7, 2020
+                <p>
+                <strong>Summary</strong>: Nowadays deep neural networks have been applied widely in many applications of computer vision including medical diagnosis and self-driving cars. However, deep neural networks are threatened by
+                adversarial examples usually in which image pixels were perturbed unnoticeable to humans but enough to fool the deep networks.
+                </p>
+            </li>
+            <li>
+                <a href = "../media/publications/10226536.pdf"><strong>Privacy preserving inference with convolutional neural network ensemble</strong><br></a>
+                A Xiong, M Nguyen, A So, T Chen<br>
+                2020 IEEE 39th International Performance Computing and Communications, 3, 2020
+                <p>
+                <strong>Summary</strong>: Machine Learning as a Service on cloud not only provides a solution to scale demanding workloads, but also allows broader accessibility for the utilization of trained deep neural networks.
+                </p>
+            </li>
+            <li>
+                <a href = "../media/publications/70.pdf"><strong>Multiview-Robust 3D Adversarial Examples of Real-world Objects</strong><br></a>
+                P Yao, A So, T Chen, H Ji<br>
+                CVPR 2020 Workshop
+                <p>
+                <strong>Summary</strong>: Implementation of a method of robust 3D adversarial attacks which considers different viewpoints where the victim camera can be placed. In particular, we find a method to create 3D adversarial examples that can achieve 100% attack success rate from all viewpoints with any integer spherical coordinates.
+                </p>
+            </li>
+        </ol>
+    </div>
+    
 
     <!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -78,3 +90,8 @@
     </script>
 </body>
 </html>
+
+
+    
+
+  
