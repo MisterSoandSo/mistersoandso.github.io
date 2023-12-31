@@ -1,0 +1,22 @@
+ /* Light mode styles */
+ body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+/* Circular image style */
+.profile-img {
+    border-radius: 50%;
+    max-width: 250px;
+    height: auto;
+}
+
+/* Profile description style */
+.profile-description {
+    max-width: 500px;
+}

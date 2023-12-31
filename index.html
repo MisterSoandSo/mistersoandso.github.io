@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrew So</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body class="light-mode">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Andrew So</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/posts">Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/publications">Publications</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Circular profile image -->
+            <div class="col-md-3">
+                <img src="media/images/profile.png" alt="Andrew So Image" class="img-fluid profile-img">
+            </div>
+            <!-- Profile description -->
+            <div class="col-md-9">
+                <p class="profile-description">
+                    Hi, I'm Andrew So, a freelance software developer passionate about creating automation, cooking new foods, and reading.
+                </p>
+                <p class="profile-description">
+                    I majored in Computer Science @ California State Polytechnic University-Pomona in Pomona, CA, graduated in Spring 2022.  
+                    I like to play around with tech but sometimes I make cool things happen!
+                </p>
+                <p class="profile-description">
+                    My skillset is in image processing, data automation, and embedded system design.
+                </p>
+                    
+                <p class="profile-description"></p>
+                    If you're a recruiter stopping by, you can find <a href = "media/resume/current.pdf">my resume here!</a>
+                    You can reach me on <a href="https://www.linkedin.com/in/andrew-chiang-so/">LinkedIn</a> or by email.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Section Headings -->
+    <div class="container mt-4">
+        <h3>Posts</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur lorem donec. Facilisi cras fermentum odio eu feugiat. Rhoncus dolor purus non enim praesent elementum. Dui id ornare arcu odio ut sem nulla pharetra diam. Feugiat nisl pretium fusce id velit ut tortor. Non odio euismod lacinia at quis risus sed. Accumsan sit amet nulla facilisi morbi. Nunc non blandit massa enim nec. Porttitor lacus luctus accumsan tortor posuere.</p>
+        <h3>Projects</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur lorem donec. Facilisi cras fermentum odio eu feugiat. Rhoncus dolor purus non enim praesent elementum. Dui id ornare arcu odio ut sem nulla pharetra diam. Feugiat nisl pretium fusce id velit ut tortor. Non odio euismod lacinia at quis risus sed. Accumsan sit amet nulla facilisi morbi. Nunc non blandit massa enim nec. Porttitor lacus luctus accumsan tortor posuere.</p>
+        <h3>Publications</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur lorem donec. Facilisi cras fermentum odio eu feugiat. Rhoncus dolor purus non enim praesent elementum. Dui id ornare arcu odio ut sem nulla pharetra diam. Feugiat nisl pretium fusce id velit ut tortor. Non odio euismod lacinia at quis risus sed. Accumsan sit amet nulla facilisi morbi. Nunc non blandit massa enim nec. Porttitor lacus luctus accumsan tortor posuere.</p>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        // Function to set the initial mode based on the time of day
+        function setInitialMode() {
+            const body = document.body;
+            const now = new Date();
+            const hour = now.getHours();
+
+            // Set dark mode if it's nighttime (adjust the hours as needed)
+            if (hour >= 15 || hour < 3) {
+                body.classList.add("dark-mode");
+            }
+        }
+
+        // Call the function to set the initial mode
+        setInitialMode();
+    </script>
+</body>
+</html>
