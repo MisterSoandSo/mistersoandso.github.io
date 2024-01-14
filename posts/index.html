@@ -11,7 +11,9 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">Andrew So</a>
+        <a class="navbar-brand" href="..">Andrew So</a>
+        <span class="navbar-brand">/</span>
+        <a class="navbar-brand" href="#">Posts</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,31 +33,27 @@
     </nav>
 
 
+    <div class="container mt-4">
+        <h3 id="2024"> 2024</h3>
+        <hr>
+        <h4>January</h4>
+        <p><a href="002.html"> #2 - Microsoft SF AI Tour</a></p>
+        <p><a href="001.html"> #1 - Happy New Years!</a></p> 
+        <h3 id="2023"> 2023</h3>
+        <hr>
+        <h3 id="2022"> 2022</h3>
+        <hr>
+        
 
+    </div>
 
-
-
+    <!-- Custom Scripts-->
+     <script src="../static/background.js"></script>
 
     <!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script>
-        // Function to set the initial mode based on the time of day
-        function setInitialMode() {
-            const body = document.body;
-            const now = new Date();
-            const hour = now.getHours();
-
-            // Set dark mode if it's nighttime (adjust the hours as needed)
-            if (hour >= 15 || hour < 3) {
-                body.classList.add("dark-mode");
-            }
-        }
-
-        // Call the function to set the initial mode
-        setInitialMode();
-    </script>
 </body>
 </html>
